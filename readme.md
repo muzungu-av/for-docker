@@ -187,6 +187,17 @@ services:
 
 docker-compose up: Запускает приложение на основе файла docker-compose.yml. Если файла нет, Docker Compose создаст контейнеры на основе указанных образов.
 
+Флаги:
+       -d - Запустить контейнер в фоновом режиме.
+       -f - указать расположение yml-файла
+       --build принудительная пересборка образов (исх код)
+
+Пример:
+
+ docker compose up -d
+
+ docker compose -f docker-compose-prod.yml up -d --build
+
 docker-compose down: Останавливает и удаляет контейнеры, созданные с помощью docker-compose up.
 
 docker-compose build: Пересобирает образы сервисов. Используется, когда внесены изменения в Dockerfile или другие файлы, влияющие на образы.
