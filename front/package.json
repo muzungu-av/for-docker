@@ -1,0 +1,13 @@
+{
+  "name": "calculator-backend",
+   "license": "MIT",
+  "version": "1.0.0",
+  "description": "Простой сервер для вычисления суммы чисел",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
